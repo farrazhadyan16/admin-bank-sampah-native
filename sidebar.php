@@ -14,9 +14,10 @@ require_once 'crud-monitoring.php';
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
         <div class="sidebar-brand-icon">
-            <img src="./img/pm_favico.png" width="27px"></img>
+            <img src="./img/logo-bank-sampah-samping-png2.png" width="40px"></img>
         </div>
-        <div class="sidebar-brand-text mx-3"><img src="./img/logoPM.png"></img></div>
+        <div class="sidebar-brand-text mx-3"><img src="./img/logo-bank-sampah-samping-png1.png" width="120px"></img>
+        </div>
     </a>
 
     <!-- Divider -->
