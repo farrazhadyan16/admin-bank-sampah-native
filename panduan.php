@@ -54,77 +54,34 @@ require_once 'crud-konsesi.php';
 
                     <!-- Page Heading -->
                     <header class=page-header page-header-dark bg-gradient-primary-to-secondary mb-4"></header>
-                    <div class="container-xl px-4"></div>
-                    <h1 class="h3 mb-2 text-gray-800">Form Pembelian </h1>
-                    <p class="mb-4">Di Form ini akan melakukan transaksi pembelian sampah dari user.
-                    </p>
-
-                    <form method="POST" action="">
-
-                        <div class="row">
-
-                            <!-- Border Left -->
-                            <div class="col">
-
-                                <div class="card mb-4 py-3">
-                                    <div class="card-body">
-                                        <label class="control-label col-sm-4">Id Nasabah</label>
-                                        <div class="col">
-                                            <input type="int" class="form-control" placeholder="Masukkan No"
-                                                name="id_konsesi" required>
+                    <div class="container-xl px-4">
+                        <div class="page-header-content pt-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-auto mt-4">
+                                    <h1 class="page-header-title">
+                                        <div class="page-header-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-life-buoy">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <circle cx="12" cy="12" r="4"></circle>
+                                                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                                                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                                                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                                                <line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line>
+                                                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+                                            </svg>
                                         </div>
-                                        <br>
-                                        <label class="control-label col-sm-4">Nama</label>
-                                        <div class="col">
-                                            <input type="int" class="form-control"
-                                                placeholder="Otomatis Generate Nama setelah masukkan id/username nasabah"
-                                                name="id_konsesi" required>
-                                        </div>
-                                    </div>
+                                        " Knowledge Base ""
+                                    </h1>
+                                    <div class="page-header-subtitle">What are you looking for? Our knowledge base is
+                                        here to help.</div>
                                 </div>
-
-                                <div class="card mb-4 py-3">
-                                    <div class="card-body">
-                                        <label class="control-label col-sm-4">Jenis Sampah</label>
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Masukkan JO" name="jo"
-                                                required>
-                                        </div>
-                                        <br>
-                                        <label class="control-label col-sm-4">Berat</label>
-                                        <div class="col">
-                                            <input type="int" class="form-control" placeholder="Masukkan No"
-                                                name="id_konsesi" required>
-                                        </div>
-                                        <br>
-                                        <label class="control-label col-sm-4">Harga/gr</label>
-                                        <div class="col">
-                                            <input type="int" class="form-control"
-                                                placeholder="Otomatis Generate Harga dari database" name="id_konsesi"
-                                                required>
-                                        </div>
-                                        <br>
-                                        <label class="control-label col-sm-4">Total</label>
-                                        <div class="col">
-                                            <input type="int" class="form-control"
-                                                placeholder="Otomatis Generate hasil dari penjualan diatas"
-                                                name="id_konsesi" required>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
                             </div>
-
                         </div>
+                    </div>
 
-                        <div class="text-center">
-                            <button type="submit" name="submit" class="btn btn-primary waves-effect waves-light"
-                                id="btn-submit">Simpan</button>
-                        </div>
-                        <input type="hidden" name="action" id="action" value="event_dialog_add_newpartnerdata" required>
-                    </form>
 
                 </div>
                 <!-- /.container-fluid -->
