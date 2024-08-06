@@ -62,6 +62,12 @@ require_once 'crud-monitoring.php';
     </li>
 
     <li class="nav-item active">
+        <a class="nav-link" href="pembelian.php">
+            <i class="fas fa-fw fa-desktop"></i>
+            <span>Pembelian</span></a>
+    </li>
+
+    <li class="nav-item active">
         <a class="nav-link" href="penjualan.php">
             <i class="fas fa-fw fa-desktop"></i>
             <span>Penjualan</span></a>
