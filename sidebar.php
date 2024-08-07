@@ -24,11 +24,6 @@ require_once 'crud-monitoring.php';
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="panduan.php">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Panduan</span></a>
-    </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="index.php">
@@ -45,9 +40,35 @@ require_once 'crud-monitoring.php';
     </div>
 
     <li class="nav-item active">
-        <a class="nav-link" href="user.php">
+        <a class="nav-link" href="sampah.php">
             <i class="fas fa-fw fa-desktop"></i>
-            <span>User</span></a>
+            <span>Sampah</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKonsesi"
+            aria-expanded="true" aria-controls="collapseKonsesi">
+            <i class="fas fa-fw fa-desktop"></i>
+            <span>Transaksi</span>
+        </a>
+        <div id="collapseKonsesi" class="collapse" aria-labelledby="headingKonsesi" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="transaksi.php">Transaksi</a>
+                <?php if ($_SESSION['role'] == 'admin') { ?>
+                <h6 class="collapse-header">Fungsi:</h6>
+                <a class="collapse-item" href="transaksi.php">Tambah Transaksi</a>
+                <a class="collapse-item" href="transaksi.php">Semua Transaksi</a>
+                <a class="collapse-item" href="transaksi.php">Rekap Transaksi</a>
+
+                <?php } ?>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link" href="admin.php">
+            <i class="fas fa-fw fa-desktop"></i>
+            <span>Admin</span></a>
     </li>
 
     <li class="nav-item active">
@@ -57,28 +78,26 @@ require_once 'crud-monitoring.php';
     </li>
 
     <li class="nav-item active">
-        <a class="nav-link" href="jenis-sampah.php">
+        <a class="nav-link" href="artikel.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Artikel</span></a>
+    </li>
+
+    <!-- <li class="nav-item active">
+        <a class="nav-link" href="penjualan.php">
             <i class="fas fa-fw fa-desktop"></i>
-            <span>Jenis Sampah</span></a>
+            <span>Penjualan</span></a>
     </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="catatan.php">
             <i class="fas fa-fw fa-desktop"></i>
             <span>Catatan</span></a>
-    </li>
+    </li> -->
 
-    <li class="nav-item active">
-        <a class="nav-link" href="pembelian.php">
-            <i class="fas fa-fw fa-desktop"></i>
-            <span>Pembelian</span></a>
-    </li>
 
-    <li class="nav-item active">
-        <a class="nav-link" href="penjualan.php">
-            <i class="fas fa-fw fa-desktop"></i>
-            <span>Penjualan</span></a>
-    </li>
+
+
 
     <!-- Nav Item - Monitoring Collapse Menu -->
     <li class="nav-item">
@@ -117,23 +136,6 @@ require_once 'crud-monitoring.php';
     </li>
 
     <!-- Nav Item - Konsesi Collapse Menu -->
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseKonsesi"
-            aria-expanded="true" aria-controls="collapseKonsesi">
-            <i class="fas fa-fw fa-desktop"></i>
-            <span>Konsesi</span>
-        </a>
-        <div id="collapseKonsesi" class="collapse" aria-labelledby="headingKonsesi" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="tables-konsesi.php">Tables</a>
-                <?php if ($_SESSION['role'] == 'admin') { ?>
-                <h6 class="collapse-header">Fungsi:</h6>
-                <a class="collapse-item" href="form-konsesi.php">Input Data</a>
-                <?php } ?>
-            </div>
-        </div>
-    </li>
 
     <!-- Nav Item - User Management Collapse Menu -->
     <?php if ($_SESSION['role'] == 'admin') { ?>
