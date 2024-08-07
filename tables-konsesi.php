@@ -16,9 +16,7 @@ require_once 'header.php';
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -36,7 +34,7 @@ require_once 'header.php';
     <div id="wrapper">
 
         <!-- Ini Sidebar -->
-        <?php include ("sidebar.php") ?>
+        <?php include("sidebar.php") ?>
         <!-- Batas Akhir Sidebar -->
 
         <!-- Content Wrapper -->
@@ -46,7 +44,7 @@ require_once 'header.php';
             <div id="content">
 
                 <!-- Topbar -->
-                <?php include ("top-bar.php") ?>
+                <?php include("top-bar.php") ?>
 
                 <!-- End of Topbar -->
 
@@ -54,10 +52,9 @@ require_once 'header.php';
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Konsesi Project</h1>
+                    <h1 class="h3 mb-2 text-gray-800"> test Konsesi Project</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
+                        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -87,7 +84,7 @@ require_once 'header.php';
                                             <th>TGL Pasang</th>
                                             <th>Keterangan</th>
                                             <?php if ($_SESSION['role'] == 'admin') { ?>
-                                            <th>Aksi</th><?php } ?>
+                                                <th>Aksi</th><?php } ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -114,10 +111,10 @@ require_once 'header.php';
                                             <td>" . $row['tgl_matrial_dtg'] . "</td>
                                             <td>" . $row['tgl_pasang'] . "</td>
                                             <td>" . $row['keterangan'] . "</td>";
-                                        
+
                                             // Check if the user has admin access
                                             if ($_SESSION['role'] == 'admin') {
-                                                echo"<td><button type='button' class='btn btn-danger btn-circle btn-delete' data-toggle='modal' data-target='#deleteModal' data-id='{$row['id_konsesi']}'><i class='fas fa-trash'></i>
+                                                echo "<td><button type='button' class='btn btn-danger btn-circle btn-delete' data-toggle='modal' data-target='#deleteModal' data-id='{$row['id_konsesi']}'><i class='fas fa-trash'></i>
                                             </td>";
                                             }
                                             echo "</tr>";
@@ -136,7 +133,7 @@ require_once 'header.php';
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php include ("footer.php") ?>
+            <?php include("footer.php") ?>
             <!-- End of Footer -->
 
         </div>
