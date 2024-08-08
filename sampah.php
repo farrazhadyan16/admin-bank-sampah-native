@@ -62,7 +62,17 @@ require_once 'header.php';
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Jenis Sampah</h6>
+                            <div id class="row">
+                                <h6 class="col-md-3 font-weight-bold text-primary text-mt-3">Data Jenis Sampah</h6>
+                                <div class="col text-right">
+                                    <div class="dt-buttons btn-group flex-wrap" id="tambahketegori">
+                                        <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0"
+                                            aria-controls="dataKonsesi" type="button">
+                                            <span>Tambah</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
