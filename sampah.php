@@ -90,7 +90,13 @@ require_once 'header.php';
                                             <td>" . $row['keterangan'] . "</td>";
                                             // Check if the user has admin access
                                             if ($_SESSION['role'] == 'admin') {
-                                                echo"<td><button type='button' class='btn btn-danger btn-circle btn-delete' data-toggle='modal' data-target='#deleteModal' data-id='{$row['id_konsesi']}'><i class='fas fa-trash'></i>
+                                                echo"
+                                                <td>
+                                                <button type='button' class='btn btn-danger btn-circle btn-delete' data-toggle='modal' data-target='#deleteModal' data-id='{$row['id_konsesi']}'><i class='fas fa-trash'></i>
+                                                </button>
+                                                <button type='button' class='btn btn-warning btn-circle btn-edit' data-toggle='modal' data-target='#editModal' data-id='{$row['id_konsesi']}'>
+                                                            <i class='fas fa-edit'></i>
+                                                </button>
                                             </td>";
                                             }
                                             echo "</tr>";

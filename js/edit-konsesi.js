@@ -1,5 +1,5 @@
 // Handle the delete button click
-$(".btn-delete").click(function () {
+$(".btn-edit").click(function () {
   var id_konsesi = $(this).data("id");
 
   // Display confirmation using SweetAlert

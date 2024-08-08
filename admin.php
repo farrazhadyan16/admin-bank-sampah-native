@@ -16,7 +16,9 @@ require_once 'header.php';
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -54,7 +56,8 @@ require_once 'header.php';
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">List Admin</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+                        For more information about DataTables, please visit the <a target="_blank"
+                            href="https://datatables.net">official DataTables documentation</a>.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -72,7 +75,7 @@ require_once 'header.php';
                                             <th>Nama Lengkap</th>
                                             <th>Type Admin</th>
                                             <?php if ($_SESSION['role'] == 'admin') { ?>
-                                                <th>Aksi</th><?php } ?>
+                                            <th>Aksi</th><?php } ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -147,6 +150,8 @@ require_once 'header.php';
     <script src="js/demo/datatables-demo.js"></script>
     <script src="DataTables/datatables.min.js"></script>
     <script src="js/delete-konsesi.js"></script>
+    <script src="js/edit-konsesi.js"></script>
+
 
 </body>
 
