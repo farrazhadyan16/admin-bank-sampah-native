@@ -162,6 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         <label class="control-label col-sm-4" for="role">Role</label>
                                         <div class="col-sm-8">
                                             <select name="role" id="role" class="form-control" required>
+                                                <option value=''>Pilih</option>
                                                 <?php
                                                 // Loop through each role and create an option element
                                                 while ($row = mysqli_fetch_assoc($result)) {
